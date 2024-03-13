@@ -1,0 +1,68 @@
+.presentation {
+  display: flex;
+  align-items: center;
+  margin: 40px 40px 60px 70px;
+}
+
+.presentation h2 {
+  font-size: 40px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.presentation img {
+  width: 30%;
+}
+
+.presentation > div {
+  width: 50%;
+}
+
+.presentation > div button {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .presentation h2 {
+    font-size: 30px;
+  }
+
+  .presentation img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .presentation {
+    margin-left: 25px;
+  }
+
+  .presentation h2 {
+    font-size: 20px;
+  }
+
+  .presentation p {
+    font-size: 11px;
+  }
+
+  .presentation img {
+    width: 40%;
+  }
+
+  .presentation button {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .presentation button {
+    margin-top: 10px !important;
+  }
+
+  .presentation img {
+    width: 50%;
+  }
+}

@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.menu h1 {
+  font-size: 20px;
+}
+
+.menu .link {
+  display: inline;
+  font-size: 14px;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+  .menu {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .menu h1 {
+    font-size: 15px !important;
+  }
+
+  .menu ul {
+    padding-inline-start: 20px;
+  }
+
+  .menu .link {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
