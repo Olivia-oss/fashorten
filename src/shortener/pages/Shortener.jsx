@@ -6,7 +6,9 @@ export const Shortener = () => {
   const [shoertenerUrl, setShoertenerUrl] = useState("");
   const handleShortener = async (url) => {
     var data = await createShortenerUrl(url);
-    setShoertenerUrl("https://fashorten.onrender.com/" + data.shortUrl);
+    setShoertenerUrl(
+      "https://leafy-tanuki-49e258.netlify.app/#/" + data.shortUrl
+    );
   };
   return (
     <div className="shortener">
