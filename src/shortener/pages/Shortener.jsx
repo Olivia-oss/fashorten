@@ -6,7 +6,7 @@ export const Shortener = () => {
   const [shoertenerUrl, setShoertenerUrl] = useState("");
   const handleShortener = async (url) => {
     var data = await createShortenerUrl(url);
-    setShoertenerUrl("http://localhost:5173/" + data.shortUrl);
+    setShoertenerUrl("https://fashorten.onrender.com/" + data.shortUrl);
   };
   return (
     <div className="shortener">
