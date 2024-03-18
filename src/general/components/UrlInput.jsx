@@ -11,9 +11,11 @@ export const UrlInput = ({ title, textButton, handleUrl }) => {
   };
 
   const handleSend = () => {
-    if (validatorURL(url)) {
+    const urlTrim = url.trim();
+    console.log(urlTrim);
+    if (validatorURL(urlTrim)) {
       setError(false);
-      handleUrl(url);
+      handleUrl(urlTrim);
     } else {
       setError(true);
     }

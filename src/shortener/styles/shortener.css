@@ -1,6 +1,6 @@
 .shortener {
-  width: 100vw;
-  height: 60vh;
+  width: 100%;
+  height: 70vh;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -19,4 +19,25 @@
 
 .shortener > p:hover {
   opacity: 0.5;
+}
+
+.shortener > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.shortener > div {
+  width: 50%;
+}
+
+@media screen and (max-width: 510px) {
+  .shortener div > h3 {
+    font-size: 13px;
+  }
+
+  .shortener div > p {
+    font-size: 10px;
+  }
 }
