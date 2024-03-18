@@ -1,6 +1,6 @@
 .visit {
-  width: 100vw;
-  height: 60vh;
+  width: 100%;
+  height: 70vh;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
