@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const urlApi = axios.create({
-  baseURL: "https://shortener-api-w7uj.onrender.com/api/v1/urls/",
+  baseURL: "https://shortener-api-tau.vercel.app/api/v1/urls/",
 });
 
 export const shoertenerOpen = async (url) => {
