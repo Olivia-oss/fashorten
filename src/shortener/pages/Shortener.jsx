@@ -10,6 +10,10 @@ export const Shortener = () => {
       "https://leafy-tanuki-49e258.netlify.app/#/" + data.shortUrl
     );
   };
+
+  const handleOpen = () => {
+    window.open(shoertenerUrl, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="shortener">
       <UrlInput
@@ -20,7 +24,9 @@ export const Shortener = () => {
       {shoertenerUrl.length > 0 ? (
         <div>
           <h3>URL generado</h3>
-          <p>{shoertenerUrl}</p>
+          <p className="pointer" onClick={handleOpen}>
+            {shoertenerUrl}
+          </p>
         </div>
       ) : (
         <div></div>

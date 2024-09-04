@@ -32,6 +32,11 @@
   width: 50%;
 }
 
+.pointer:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 510px) {
   .shortener div > h3 {
     font-size: 14px;
