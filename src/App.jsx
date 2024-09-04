@@ -1,6 +1,6 @@
 import { AppRouter } from "./routers/AppRouter";
-import { Menu } from "./general/components/Menu";
-import { Footer } from "./general/components/Footer";
+import { Menu } from "./common/components/Menu";
+import { Footer } from "./common/components/Footer";
 export const App = () => {
   return (
     <>

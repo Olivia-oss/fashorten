@@ -29,3 +29,8 @@ h1:hover {
 .invisible {
   visibility: hidden;
 }
+
+.pointer:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}

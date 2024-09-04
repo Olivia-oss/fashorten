@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createShortenerUrl } from "../../api/url";
-import { UrlInput } from "../../general/components/UrlInput";
+import { UrlInput } from "../../common/components/UrlInput";
 import "../styles/shortener.css";
 export const Shortener = () => {
   const [shoertenerUrl, setShoertenerUrl] = useState("");

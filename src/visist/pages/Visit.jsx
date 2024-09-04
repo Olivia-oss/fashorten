@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getShoertenerUrl } from "../../api/url";
-import { UrlInput } from "../../general/components/UrlInput";
+import { UrlInput } from "../../common/components/UrlInput";
 import "../styles/visit.css";
 import imgNone from "../../assets/imgs/none.png";
 
