@@ -11,9 +11,7 @@ export const Visit = () => {
     const page = url.split("/").pop();
 
     var data = await getShoertenerUrl(page);
-    console.log(typeof data.visits);
     if (typeof data.visits == "undefined") {
-      console.log("enter");
       setshortenerUrl(-3);
     } else {
       setshortenerUrl(data.visits);

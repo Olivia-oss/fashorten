@@ -12,7 +12,7 @@ export const UrlInput = ({ title, textButton, handleUrl }) => {
 
   const handleSend = () => {
     const urlTrim = url.trim();
-    console.log(urlTrim);
+
     if (validatorURL(urlTrim)) {
       setError(false);
       handleUrl(urlTrim);
