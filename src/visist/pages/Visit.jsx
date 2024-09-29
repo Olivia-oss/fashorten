@@ -1,21 +1,14 @@
-import { useState } from "react";
-import { getShoertenerUrl } from "../../api/url";
 import { UrlInput } from "../../common/components/UrlInput";
 import "../styles/visit.css";
 import imgNone from "../../assets/imgs/none.png";
+import { useLink } from "../../hook/useLink";
+import IconLoading from "../../common/components/IconLoading";
 
 export const Visit = () => {
-  const [shortenerUrl, setshortenerUrl] = useState(-1);
+  const { getVisitLink, visitLink, loading } = useLink();
 
   const handleVisit = async (url) => {
-    const page = url.split("/").pop();
-
-    var data = await getShoertenerUrl(page);
-    if (typeof data.visits == "undefined") {
-      setshortenerUrl(-3);
-    } else {
-      setshortenerUrl(data.visits);
-    }
+    getVisitLink(url);
   };
   return (
     <div>
@@ -25,7 +18,9 @@ export const Visit = () => {
           textButton="Buscar"
           handleUrl={handleVisit}
         />
-        {shortenerUrl == -3 ? (
+        {loading ? (
+          <IconLoading />
+        ) : visitLink == -3 ? (
           <div className="none">
             <img src={imgNone} />
             <p>Url no existe</p>
@@ -33,11 +28,11 @@ export const Visit = () => {
         ) : (
           <div></div>
         )}
-        {shortenerUrl > -1 ? (
+        {visitLink > -1 ? (
           <div>
             <h3>Visitas en la pagina</h3>
             <div className="cirlce">
-              <p>{shortenerUrl}</p>
+              <p>{visitLink}</p>
             </div>
           </div>
         ) : (

@@ -1,7 +1,8 @@
 import axios from "axios";
+const URLAPI = "https://shortener-api-tau.vercel.app/api/v1/urls/";
 
 const urlApi = axios.create({
-  baseURL: "https://shortener-api-tau.vercel.app/api/v1/urls/",
+  baseURL: URLAPI,
 });
 
 export const shoertenerOpen = async (url) => {
